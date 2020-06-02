@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="start" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/espView" android:background="#150432" android:visibility="gone" android:layout_width="300dp" android:layout_height="match_parent">
+        <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="#ee30ff" android:gravity="center" android:id="@+id/textView4" android:background="#1b1010" android:layout_width="match_parent" android:layout_height="40dp" android:text="DesiEsp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="36sp" android:textStyle="bold" android:textColor="#ff0000" android:gravity="end" android:layout_gravity="end" android:id="@+id/closeBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="X" android:textAlignment="viewEnd"/>
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Switch android:textColor="#5ee863" android:textColorHint="#424242" android:id="@+id/isBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Box"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isLine" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Line"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isDist" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Distance"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isHealth" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Health"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isName" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Name"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isHead" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Head Position"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isBack" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Back Mark"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isVech" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Vehicle"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isItem" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Important Items"/>
+                <TextView android:textSize="24sp" android:textColor="#edbee9" android:id="@+id/textView8" android:background="#401b1b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Donator Special" android:textAlignment="center"/>
+                <Switch android:textColor="#5ee863" android:id="@+id/isSkelton" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="Skelton"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relativeLayoutParent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layoutCollapsed" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/floatLogo" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/logo"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

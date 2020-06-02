@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tencent.idk" platformBuildVersionCode="29" platformBuildVersionName="10" android:versionCode="13" android:versionName="2.41" android:compileSdkVersion="29" android:compileSdkVersionCodename="10">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="ACCESS_SUPERUSER"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:label="IDK" android:icon="@mipmap/ic_launcher_desi_foreground" android:debuggable="false" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="@mipmap/ic_launcher_desi_round" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:name="com.tencent.desi.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.desi.HomeView">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.tencent.desi.FloatingView" android:enabled="true" android:exported="false"/>
+        <service android:name="com.tencent.desi.Overlay"/>
+    </application>
+</manifest>

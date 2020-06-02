@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="36sp" android:textColor="#ff0000" android:id="@+id/textView3" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Please give me root permission and restart"/>
+</LinearLayout>
